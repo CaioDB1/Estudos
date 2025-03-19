@@ -32,9 +32,3 @@
 </div>
 
 ###
-
-<br clear="both">
-
-<img src="https://raw.githubusercontent.com/CaioDB1/CaioDB1/output/snake.svg" alt="Snake animation" />
-
-###
