@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Quiz | Você consegue acertar qual é o filme pelo título em português de Portugal?</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <div class="intro py-3 bg-primary text-center">
+        <div class="container">
+            <h2 class="text-light display-3 my-4">Quiz</h2>
+        </div>
+    </div>
+    <div class="result py-4 d-none bg-light text-center">
+      <div class="container lead">
+        <p>Você acertou
+          <span class="text-primary display-4 p-3">0%</span> do quiz!
+        </p>
+      </div>
+    </div>
+    <!-- Quiz Section -->
+    <div class="quiz py-4 bg-dark">
+        <div class="container">
+            <h2 class="my-5 text-white">Você consegue acertar qual é o filme pelo título em português de Portugal?</h2>
+            <form class="quiz-form text-light">
+                <!-- Question 1 -->
+                <div class="my-5">
+                    <p class="lead font-weight-normal">1. 'O Mal Disposto' é o nome dado para o filme:</p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="inputQuestion1" value="A" id="q1a" checked>
+                        <label class="form-check-label" for="q1a">Psico</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="inputQuestion1" value="B" id="q1b">
+                        <label class="form-check-label" for="q1b">Meu Malvado Favorito</label>
+                    </div>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="my-5">
+                    <p class="lead font-weight-normal">2. 'O Aviso' é o nome dado para o filme de terror:</p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="inputQuestion2" value="A" id="q2a" checked>
+                        <label class="form-check-label" for="q2a">O Grito</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="inputQuestion2" value="B" id="q2b">
+                        <label class="form-check-label" for="q2b">O Chamado</label>
+                    </div>
+                </div>
+
+                <!-- Question 3 -->
+                <div class="my-5">
+                    <p class="lead font-weight-normal">3. 'Uma Família à Beira de um Ataque de Nervos' é o título de:</p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="inputQuestion3" value="A" id="q3a" checked>
+                        <label class="form-check-label" for="q3a">Família do Bagulho</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="inputQuestion3" value="B" id="q3b">
+                        <label class="form-check-label" for="q3b">Pequena Miss Sunshine</label>
+                    </div>
+                </div>
+
+                <!-- Question 4 -->
+                <div class="my-5">
+                    <p class="lead font-weight-normal">4. 'O Rei dos Gazeteiros' é o famoso filme:</p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="inputQuestion4" value="A" id="q4a" checked>
+                        <label class="form-check-label" for="q4a">O Lobo de Wall Street</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="inputQuestion4" value="B" id="q4b">
+                        <label class="form-check-label" for="q4b">Curtindo a Vida Adoidado</label>
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
