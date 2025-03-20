@@ -1,33 +1,67 @@
-const correctAnswers = ['B','B','B','B']
-const finalResult = document.querySelector('.result')
+const correctAnswers = ['A','B','D','C']
+const finalScoreContainer = document.querySelector('.result')
 const form = document.querySelector('.quiz-form')
 
-form.addEventListener('submit', event => {
-    let score = 0
-    let counter = 0
-    event.preventDefault()
-    const userAnswers = [
-        form.inputQuestion1.value,
-        form.inputQuestion2.value,
-        form.inputQuestion3.value,
-        form.inputQuestion4.value,
-    ]
+let score = 0
+
+
+const getUserAnswers = () => {
+    // const userAnswers = [
+    //     form.inputQuestion1.value,
+    //     form.inputQuestion2.value,
+    //     form.inputQuestion3.value,
+    //     form.inputQuestion4.value,
+    // ]
+    // return userAnswers
+    let userAnswers = []
+
+    correctAnswers.forEach((_, index) => {
+        userAnswers.push(form[`inputQuestion${index+1}`].value)
+    })
+
+    return userAnswers
+}
+
+const calculateUserScore = (userAnswers) => {
     userAnswers.forEach((userAnswer, index) => {
         //console.log(userAnswer)
-        if(userAnswer === correctAnswers[index]){
+        const isUserAnswerCorrect = userAnswer === correctAnswers[index]
+        if(isUserAnswerCorrect){
             score += 25
         }
     })
-    scrollTo(0, 0)
-    //console.log(`Você acertou ${score}% das questões.`)
+}
+
+const showFinalScore = () => {
+    scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    })
+    finalScoreContainer.classList.remove('d-none')
+}
+
+const animateFinalScore = () => {
+    let counter = 0
     const timer = setInterval(() => {        
-        finalResult.querySelector('span').textContent = `${counter}%`
         if(counter === score){
             clearInterval(timer)
         }
-        counter++
+        finalScoreContainer.querySelector('span').textContent = `${counter++}%`
+
     }, 10)
-    finalResult.classList.remove('d-none')
+}
+
+form.addEventListener('submit', event => {
+    score = 0
+
+    event.preventDefault()
+    const userAnswers = getUserAnswers()
+    calculateUserScore(userAnswers)
+    showFinalScore()
+    //console.log(`Você acertou ${score}% das questões.`)
+    animateFinalScore()
+    
 })
 
 
