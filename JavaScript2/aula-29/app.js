@@ -32,6 +32,23 @@ const calculateUserScore = (userAnswers) => {
     })
 }
 
+// const calculateUserScore = userAnswers.reduce((score, answer, index) => {
+//     if(answer === correctAnswers[index]){
+//         score += 25
+//     }
+//     return score
+// }, 0)
+
+// const calculateUserScore = (userAnswers) => {
+//     return userAnswers.reduce((score, answer, index) => {
+//         if (answer === correctAnswers[index]) {
+//             score += 25;
+//         }
+//         return score
+//     }, 0)
+// }
+
+
 const showFinalScore = () => {
     scrollTo({
         top: 0,

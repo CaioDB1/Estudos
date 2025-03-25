@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="bg-primary p-3">
+        <h1 style="text-align: center; color: aliceblue;">Quiz</h1>
+    </div>
+    <div class="bg-success p-3 d-none" id="resultadoDiv">
+        <h1 class="text-light text-center" id="resultadoTxt"></h1>
+    </div>
+    <div class="bg-dark p-3">
+        <h1 class="text-light text-center">Você consegue acertar essas questões de História do Brasil?</h1>
+    </div>
+
+<form>
+    <div class="bg-dark p-3">
+        <div>
+            <h4 class="text-light">1. Com quantos anos Dom Pedro II assumiu o trono?</h4>
+            <div class="form-check text-white-50">
+                <input class="form-check-input" type="radio" id="q1a" name="q1" value="A">
+                <label class="form-check-label" for="q1a">14 anos</label>
+            </div>
+            <div class="form-check text-white-50">
+                <input class="form-check-input" type="radio" id="q1b" name="q1" value="B">
+                <label class="form-check-label" for="q1b">18 anos</label>
+            </div>
+            <div class="form-check text-white-50">
+                <input class="form-check-input" type="radio" id="q1c" name="q1" value="C">
+                <label class="form-check-label" for="q1c">20 anos</label>
+
+            </div>
+        </div>
+        <div class="my-4">
+            <h4 class="text-light">2. Quantos anos durou o império brasileiro?</h4>
+            <div class="form-check text-white-50">
+                <input class="form-check-input" type="radio" id="q2a" name="q2" value="A">
+                <label class="form-check-label" for="q2a">50 anos</label>
+            </div>
+            <div class="form-check text-white-50">
+                <input class="form-check-input" type="radio" id="q2b" name="q2" value="B">
+                <label class="form-check-label" for="q2b">67 anos</label>
+            </div>
+            <div class="form-check text-white-50">
+                <input class="form-check-input" type="radio" id="q2c" name="q2" value="C">
+                <label class="form-check-label" for="q2d">72 anos</label>
+            </div>
+        </div>
+        <div class="my-4">
+            <h4 class="text-light">Quando o Brasil ganhou a guerra do paraguai?</h4>
+            <div class="form-check text-white-50">
+                <input class="form-check-input" type="radio" id="q3a" name="q3" value="A">
+                <label class="form-check-label" for="q3a">1867</label>
+            </div>
+            <div class="form-check text-white-50">
+                <input class="form-check-input" type="radio" id="q3b" name="q3" value="B">
+                <label class="form-check-label" for="q3b">1875</label>
+            </div>
+            <div class="form-check text-white-50">
+                <input class="form-check-input" type="radio" id="q3c" name="q3" value="C">
+                <label class="form-check-label" for="q3c">1870</label>
+            </div>
+        </div>
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary my-3">Enviar</button>
+        </div>
+    </div>
+</form>
+
+
+    <script src="./app.js"></script>    
+</body>
+</html>
