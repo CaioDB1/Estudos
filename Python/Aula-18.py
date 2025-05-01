@@ -11,4 +11,17 @@ class Evento:
         return "estático chamado"
     
 ev = Evento()
-a = ev.metodo_instancia() # Evento.metodo_instancia
+# a = ev.metodo_instancia() # Evento.metodo_instancia
+# print(a)
+
+# b = Evento.metodo_classe() # Evento.metodo_classe(Evento)
+# print(b)
+
+# c = Evento.metodo_estatico() # Evento.metodo_estatico()
+# print(c)
+
+# a = ev.metodo_classe()
+# print(a)
+
+a = ev.metodo_estatico()
+print(a)

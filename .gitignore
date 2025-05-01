@@ -3,3 +3,5 @@ Pyhton/.vscode/settings.json
 PowerBI/Quadrados.png
 PowerBI/Quadrados.svg
 Pyhton/tempCodeRunnerFile.py
+*.pyc
+*.json
